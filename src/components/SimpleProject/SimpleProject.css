@@ -1,0 +1,90 @@
+.simpleProjects {
+  color: #a3bacc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.simpleproject-heading {
+  text-align: center;
+}
+
+.simpleproject-heading > h3 {
+  font-size: 2rem;
+  color: #a3bacc;
+  margin-bottom: 0.8rem;
+}
+
+.simpleproject-heading > span {
+  color: #24d5db;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-cart {
+  text-decoration: none;
+  color: #a3bacc;
+  max-width: 19rem;
+  background-color: #102240;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+  border-radius: 10px;
+  height: 300px;
+  transition: all 0.5s;
+}
+
+.project-cart:hover {
+  transform: translateY(-9px);
+}
+.project-cart:hover:hover .p-title {
+  color: #24d5db;
+}
+.project-cart > :nth-child(2),
+.project-cart > :nth-child(3) {
+  color: #a3bacc;
+  font-family: sans-serif;
+  line-height: 1.3;
+  font-size: 17px;
+}
+
+.project-cart > :nth-child(2) {
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+.project-cart__icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-cart__icon > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.p-language {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.s-btn {
+  padding: 16px 32px;
+  margin-top: 30px;
+}

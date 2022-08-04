@@ -1,0 +1,42 @@
+.UiDesign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.UIDesign-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.UIDesign-heading > h3 {
+  font-size: 2rem;
+  color: #a3bacc;
+  margin-bottom: 0.8rem;
+}
+
+.UIDesign-heading > span {
+  color: #24d5db;
+}
+
+.Design-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.Design-cart > img {
+  max-width: 22rem;
+  object-fit: cover;
+  background-position: center;
+  backface-visibility: visible;
+  transition: all 0.5s;
+}
+
+.Design-cart > img:hover {
+  transform: scale(1.04);
+}

@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > div {
+  background-color: #b8d4eb;
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer > div:hover {
+  background-color: #8bc2ee;
+}
+
+.footer > span {
+  color: #24d5db;
+  line-height: 80px;
+}

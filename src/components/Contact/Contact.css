@@ -1,0 +1,33 @@
+.contact {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact > span {
+  font-size: 18px;
+  color: #5bc5c8;
+}
+
+.contact > p {
+  max-width: 33rem;
+  color: #b8d4eb;
+  margin-top: -0.8rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.contact > h3 {
+  color: #b8d4eb;
+  font-family: sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.contact > button {
+  padding: 18px 40px;
+  margin-top: 2rem;
+}
