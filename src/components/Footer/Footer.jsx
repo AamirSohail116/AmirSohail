@@ -10,7 +10,7 @@ function Footer() {
         <div>
           <ArrowUpwardSharpIcon style={{ color: "#000" }} />
         </div>
-        <span>Aamir Sohail</span>
+        <span>Aamir SohailKhan</span>
       </div>
     </div>
   );
