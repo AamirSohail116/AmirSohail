@@ -13,10 +13,11 @@ function About() {
             <div className="line"></div>
           </div>
           <span>
-            Hello! My name is Usama and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2017. I started
-            my coding journey from Web Desiging. In first days I learned wordpress
-            and custom coding in wordpress blogging taught me a lot about HTML & CSS!
+            Hello! My name is Aamir Sohail and I enjoy creating things that live on
+            the internet. My interest in web development started back in 20018. I
+            started my coding journey from Web Desiging. In first days I learned
+            wordpress and custom coding in wordpress blogging taught me a lot about
+            HTML & CSS!
           </span>
           <span>
             Fast-forward to today, I've had the privilege of working at a school, a

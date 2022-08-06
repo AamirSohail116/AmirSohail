@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
@@ -11,12 +10,7 @@ function Hero() {
         <span>Interactive Front-end developer.</span>
         <span>
           I'm a full stack developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I'm focused on two
-          projects with my team at{" "}
-          <span>
-            <Link to="/expenses">spaceman</Link>
-          </span>
-          .
+          designing) exceptional digital experiences.
         </span>
         <button className="btn hero-btn">Get In Touch</button>
       </div>
