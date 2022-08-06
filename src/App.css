@@ -71,6 +71,20 @@
     "Courier New", monospace;
 }
 
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+h4 {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  font-size: 20px;
+}
+
 .App {
   /* background-color: #032336; */
   background: #032336; /* fallback for old browsers */
@@ -143,7 +157,7 @@
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 

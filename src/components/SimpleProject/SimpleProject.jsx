@@ -3,7 +3,6 @@ import SourceIcon from "@mui/icons-material/Source";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import SimpleProjectData from "../../Data/SimpleProjectData";
-import { Link } from "react-router-dom";
 import "./SimpleProject.css";
 
 function SimpleProject() {
@@ -14,8 +13,8 @@ function SimpleProject() {
         <span>view the archieve</span>
       </div>
       <div className="projects">
-        {SimpleProjectData.map((project) => (
-          <Link to="/" className="project-cart">
+        {SimpleProjectData.map((project, i) => (
+          <a href={project.url} target="_blank" className="project-cart" key={i}>
             <div className="project-cart__icon">
               <div>
                 <SourceIcon style={{ fontSize: "70px", color: "#24d5db" }} />
@@ -32,7 +31,7 @@ function SimpleProject() {
               <span>Redux</span>
               <span>Firebase</span>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
       <button className="btn s-btn">Show more</button>

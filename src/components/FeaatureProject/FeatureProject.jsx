@@ -15,8 +15,8 @@ function FeatureProject() {
           <div className="line"></div>
         </div>
         <div className="feature-project">
-          {featureprojectData.map((project) => (
-            <div className="project">
+          {featureprojectData.map((project, i) => (
+            <div className="project" key={i}>
               <div className="left-p">
                 <span>{project.feature}</span>
                 <h3>{project.title}</h3>

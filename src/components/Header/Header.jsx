@@ -1,34 +1,65 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { MenuSharp, CloseSharp } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 import "./header.css";
 
 function Header() {
+  const [navbar, setNavbar] = useState(false);
+
+  const [showSidebar, setShowSidebar] = useState(true);
+
+  const changeBackground = () => {
+    if (window.scrollY > 5) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
-    <div className="header-container">
-      <div className="header">
-        <div className="left-h">
-          <h1>Amir</h1>
-        </div>
-        <div className="right-h">
-          <ul>
-            <li>
-              {" "}
-              <a href="#!">About</a>{" "}
-            </li>
-            <li>
-              <a href="#!">Work</a>
-            </li>
-            <li>
-              <a href="#!">UI Design</a>
-            </li>
-            <li>
-              <a href="#!">Contact</a>
-            </li>
-          </ul>
-          <button className="header-btn">Resume</button>
-        </div>
+    <nav className={navbar ? "window-scroll" : ""}>
+      <div className="container nav__container">
+        <Link to="/">
+          <h4>Amir</h4>
+        </Link>
+        <ul className={`nav__menu ${!showSidebar ? "" : "nav__menu--responsive "}`}>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/courses">Courses</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+        {showSidebar && (
+          <button
+            className="open-menu-btn"
+            id="open-menu-btn"
+            onClick={() => setShowSidebar(!showSidebar)}
+          >
+            <MenuSharp style={{ fontSize: "2rem" }} />
+          </button>
+        )}
+        {!showSidebar && (
+          <button
+            className="close-menu-btn"
+            id="close-menu-btn"
+            onClick={() => setShowSidebar(!showSidebar)}
+          >
+            <CloseSharp style={{ fontSize: "2rem" }} />
+          </button>
+        )}
       </div>
-    </div>
+    </nav>
   );
 }
 
